@@ -13,7 +13,6 @@ import com.Display.Display;
 
 import gameScreen.Mushroom;
 import gameScreen.Player;
-import sprite.SpriteAnimation;
 
 public class SingleCentipede implements EnemyType{
 	

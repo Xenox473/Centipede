@@ -10,20 +10,17 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
-import com.Display.Display;
 
 import gameScreen.GameScreen;
 import gameScreen.Mushroom;
 import gameScreen.Player;
-import gameScreen.PlayerWeapons;
 import player_bullets.PlayerWeapon;
 import timer.Timer;
 
 public class Spider implements EnemyType{
 	
 	private double xPos, yPos, tempX, tempY;
-	private int width, height, directionx = 1, directiony = 1;
-	private final double speed = 0.5;
+	private int width, height;
 	private BufferedImage centipedeSprite;
 	private Rectangle rectangle;
 	private int lives = 1;
@@ -60,18 +57,6 @@ public class Spider implements EnemyType{
 	public void changeDirection(double delta) {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public boolean deathScene() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean collide(int i, Player player, ArrayList<EnemyType> enemy) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override

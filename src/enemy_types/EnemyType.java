@@ -11,8 +11,6 @@ public interface EnemyType {
 //	void update(double delta, Player player);
 	void changeDirection(double delta);
 	
-	boolean deathScene();
-	boolean collide(int i, Player player, ArrayList<EnemyType> enemy);
 	boolean isOutBounds();
 	void update(double delta, Player player, ArrayList<Mushroom> mushrooms);
 }

@@ -123,21 +123,10 @@ public class SingleCentipede implements EnemyType{
 	}
 
 	@Override
-	public boolean deathScene() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
 	public boolean isOutBounds() {
 		if(rectangle.x > 0 && rectangle.x < Display.WIDTH - rectangle.width)
 			return false;
 		return true;
-	}
-	@Override
-	public boolean collide(int i, Player player, ArrayList<EnemyType> enemy) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 	
 	public boolean collisionMushroom(ArrayList<Mushroom> mushrooms) {

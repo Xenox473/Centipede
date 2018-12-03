@@ -9,13 +9,15 @@ import javax.swing.JFrame;
 
 import com.State.StateMachine;
 
+import sound.Sound;
+
 public class Display extends Canvas implements  Runnable{
 	
 	private static final long serialVersionUID = 1L;
 	//Defining width and height of display.
 	public static int WIDTH = 800;
 	public static int HEIGHT = 600;
-	
+	public static Sound backgroundMusic;
 	//Defining FPS
 	public int FPS;
 	
@@ -83,7 +85,8 @@ public class Display extends Canvas implements  Runnable{
 		final int targetFPS = 60;
 		final long optimalTime = 1000000000/targetFPS;
 		int frames = 0;
-
+		backgroundMusic = new Sound("/sounds/Spider_Man_1967_-_Main_Theme_8-bit_Version-mBNZKgFHa_8.wav");
+		backgroundMusic.loop();
 		while(isRunning) {
 			long now = System.currentTimeMillis();
 			long update = now - loopTimer;
